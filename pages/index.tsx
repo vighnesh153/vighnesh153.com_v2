@@ -1,73 +1,412 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import Image from 'next/image';
 
-import styles from 'styles/Home.module.css';
+import A from 'components/A';
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Vighnesh Raut | My world</title>
-        <meta
-          name="description"
-          content="Vighnesh's personal space where he posts stuff about himself. View his different profiles, skills and projects there or find a way to contact him."
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div className="container">
+      <header>
+        <div className="logo">Logo</div>
+        <nav>
+          <ul>
+            <li className="nav-link">
+              <a href="#about">About</a>
+            </li>
+            <li className="nav-link">
+              <a href="#experience">Experience</a>
+            </li>
+            <li className="nav-link">
+              <a href="#projects">Projects</a>
+            </li>
+            <li className="nav-link">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+          <a href="#">Resume</a>
+        </nav>
+      </header>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <main className="main">
+        <section className="introduction">
+          <h2 hidden>Introduction</h2>
+          <p>Hi, my name is</p>
+          <p>Vighnesh Raut</p>
+          <p>I build things for fun.</p>
+          <p>
+            I am a Computer Science grad with a sweet tooth for mathematics.
+            Love to manipulate graphics using code and build end-to-end systems.
+          </p>
+          <a href="#contact">Get In Touch</a>
+        </section>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
+        <section id="about">
+          <h2 className="heading">
+            <span className="number">01.</span> About me
+          </h2>
+          <p>
+            Hello. My name is Vighnesh and I enjoy creating things that live on
+            the web. My interest in frontend development started a few years
+            back when I first learnt about HTML, CSS and Javascript. Since then,
+            I have been building teeny-tiny projects for the web for fun.
+            <br />
+            <br />
+            Fast-forward to today, and I have had the privilege to work for{' '}
+            <a href="https://amazon.com" target="_blank" rel="noreferrer">
+              a huge corporation
+            </a>
+            ,{' '}
+            <a href="https://smarter.codes/" target="_blank" rel="noreferrer">
+              an AI startup
+            </a>{' '}
+            and{' '}
+            <a href="https://www.tavisca.com/" target="_blank" rel="noreferrer">
+              a loyalty rewards company
+            </a>
+            .
+            <br />
+            <br />
+            My main focus these days is building is building accessible,
+            inclusive products and digital experiences at{' '}
+            <a href="https://amazon.com" target="_blank" rel="noreferrer">
+              Amazon
+            </a>{' '}
+            for the Appstore org.
+            <br />
+            <br />
+            Here are a few technologies I have been working with recently:
+            <br />
+            <br />
+            <ul>
+              <li>Javascript (ES6+)</li>
+              <li>Typescript</li>
+              <li>React</li>
+              <li>Nodejs</li>
+            </ul>
+          </p>
+        </section>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <section id="experience">
+          <h2 className="heading">
+            <span className="number">02.</span> Where I have worked
+          </h2>
+          <nav role="tablist">
+            <ul>
+              <li role="tab">
+                <a href="#experience" aria-controls="experience-at-amazon">
+                  Amazon
+                </a>
+              </li>
+              <li role="tab">
+                <a
+                  href="#experience"
+                  aria-controls="experience-at-smarter-codes"
+                >
+                  Smarter Codes
+                </a>
+              </li>
+              <li role="tab">
+                <a href="#experience" aria-controls="experience-at-tavisca">
+                  Tavisca
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <section aria-live="polite" role="region">
+            <article
+              id="experience-at-amazon"
+              role="tabpanel"
+              className="experience-item-body"
+            >
+              <h3>
+                Web Dev Engineer <a href="#">@ Amazon</a>
+              </h3>
+              <h4>September 2020 - Present</h4>
+              <ul className="responsibilities">
+                <li>
+                  Working on the revamp of App Submission flow on{' '}
+                  <a
+                    href="//developer.amazon.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    developer.amazon.com
+                  </a>{' '}
+                  where developers can submit their mobile or web applications
+                  to be available on Amazon Appstore
+                </li>
+                <li>
+                  Working on a internal tool which is a one stop for everything
+                  related to the Day 1 culture of Amazon. The tool is accessible
+                  to all the Amazon employees and is currently handling over
+                  2000 tps
+                </li>
+                <li>
+                  Write modern, performant, maintainable code for a diverse
+                  array of other Amazon internal projects
+                </li>
+                <li>
+                  Work with a variety of different languages, platforms,
+                  frameworks, and content management systems such as Javascript,
+                  Typescript, React, NextJS, Java, Spring, AWS
+                </li>
+                <li>
+                  Communicate with multi-disciplinary teams of engineers,
+                  designers, program managers, and stakeholders on a daily basis
+                </li>
+              </ul>
+            </article>
+            <article
+              id="experience-at-smarter-codes"
+              role="tabpanel"
+              className="experience-item-body"
+            >
+              <h3>
+                Full Stack Engineer <a href="#">@ Smarter Codes</a>
+              </h3>
+              <h4>July 2020 - September 2020</h4>
+              <ul className="responsibilities">
+                <li>
+                  Implemented many of the{' '}
+                  <A href="//rocket.chat" openInNewTab>
+                    Rocket Chat
+                  </A>{' '}
+                  features for the{' '}
+                  <A href="//mattermost.com" openInNewTab>
+                    Mattermost
+                  </A>{' '}
+                  chat platform
+                </li>
+                <li>
+                  Lot of other utility plugins for the{' '}
+                  <A href="//mattermost.com" openInNewTab>
+                    Mattermost
+                  </A>{' '}
+                  chat platform
+                </li>
+                <li>Worked on amazing tech stack: ReactJS, Golang and AWS</li>
+              </ul>
+            </article>
+            <article
+              id="experience-at-tavisca"
+              role="tabpanel"
+              className="experience-item-body"
+            >
+              <h3>
+                Software Engineer <a href="#">@ Tavisca</a>
+              </h3>
+              <h4>June 2019 - January 2020</h4>
+              <ul className="responsibilities">
+                <li>
+                  Under went Software Engineering training for 6 months and
+                  learnt a lot about Software engineering design principles,
+                  clean code best practices, etc.
+                </li>
+                <li>
+                  Built a Road-trip Itinerary Planner (proof-of-concept) project
+                  where I applied all the things I learnt during my training
+                  phase
+                </li>
+                <li>
+                  Worked on fixing a bunch of bugs/issues on the production
+                  application
+                </li>
+              </ul>
+            </article>
+          </section>
+        </section>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+        <section id="projects">
+          <section id="featured-projects">
+            <h2 className="heading">
+              <span className="number">03.</span> Some things I have built
+            </h2>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+            <article id="spl">
+              <img src="//google.com" alt="" />
+              <p>Featured Project</p>
+              <h3>
+                <A href="//spl.vighnesh153.com" openInNewTab>
+                  Simple Programming Language (SPL)
+                </A>
+              </h3>
+              <p>
+                A small programming language built with the intention of helping
+                people start with their programming journey.
+              </p>
+              <ul className="technologies">
+                <li>Typescript</li>
+                <li>AWS S3 & Cloudfront</li>
+                <li>Github Actions</li>
+              </ul>
+              <ul className="links">
+                <li>
+                  <A href="//github.com/vighnesh153/spl" openInNewTab>
+                    Octocat Icon
+                  </A>
+                </li>
+                <li>
+                  <A href="//spl.vighnesh153.com" openInNewTab>
+                    External link icon
+                  </A>
+                </li>
+              </ul>
+            </article>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+            <article id="use-global-state">
+              <img src="//google.com" alt="" />
+              <p>Featured Project</p>
+              <h3>
+                <A
+                  href="//www.npmjs.com/package/@vighnesh153/use-global-state"
+                  openInNewTab
+                >
+                  React useGlobalState library
+                </A>
+              </h3>
+              <p>
+                A lightweight library that provides a React hook for having a
+                piece of global state. It is similar to the useState hook from
+                the React library but with the only addition that this hook{' '}
+                <strong className="highlight">persists</strong> the state.
+              </p>
+              <ul className="technologies">
+                <li>React</li>
+                <li>Typescript</li>
+                <li>NPM</li>
+                <li>Github Actions</li>
+              </ul>
+              <ul className="links">
+                <li>
+                  <A
+                    href="//github.com/vighnesh153/react-use-global-state"
+                    openInNewTab
+                  >
+                    Octocat Icon
+                  </A>
+                </li>
+                <li>
+                  <A
+                    href="//www.npmjs.com/package/@vighnesh153/use-global-state"
+                    openInNewTab
+                  >
+                    External link icon
+                  </A>
+                </li>
+              </ul>
+            </article>
+
+            <article id="canvas-illustrations">
+              <img src="//google.com" alt="" />
+              <p>Featured Project</p>
+              <h3>
+                <A href="//graphics.vighnesh153.com" openInNewTab>
+                  Javascript Canvas API illustrations
+                </A>
+              </h3>
+              <p>
+                Manipulation of the graphics using the HTML Canvas API in
+                Javascript.
+              </p>
+              <ul className="technologies">
+                <li>React</li>
+                <li>Typescript</li>
+                <li>AWS S3 & Cloudfront</li>
+                <li>Github Actions</li>
+              </ul>
+              <ul className="links">
+                <li>
+                  <A
+                    href="//github.com/vighnesh153/canvas-api-illustrations"
+                    openInNewTab
+                  >
+                    Octocat Icon
+                  </A>
+                </li>
+                <li>
+                  <A href="//graphics.vighnesh153.com" openInNewTab>
+                    External link icon
+                  </A>
+                </li>
+              </ul>
+            </article>
+          </section>
+
+          <section id="other-noteworthy-projects">
+            <h3>Other Noteworthy Projects</h3>
+
+            <article id="personal-blog">
+              <img src="//google.com" alt="" className="card-icon" />
+              <ul className="links">
+                <li>
+                  <A href="#" openInNewTab>
+                    Octocat Icon
+                  </A>
+                </li>
+                <li>
+                  <A href="//blogs.vighnesh153.com" openInNewTab>
+                    External link icon
+                  </A>
+                </li>
+              </ul>
+              <h4>Personal Blog</h4>
+              <p>A place where I write about anything, mostly Technology</p>
+              <ul className="technologies">
+                <li>React</li>
+                <li>Typescript</li>
+                <li>Vercel</li>
+                <li>NextJS</li>
+              </ul>
+            </article>
+
+            <article id="react-toolkit">
+              <img src="//google.com" alt="" className="card-icon" />
+              <ul className="links">
+                <li>
+                  <A href="//github.com/vighnesh153/react-toolkit" openInNewTab>
+                    Octocat Icon
+                  </A>
+                </li>
+                <li>
+                  <A href="//react-toolkit.vighnesh153.com/" openInNewTab>
+                    External link icon
+                  </A>
+                </li>
+              </ul>
+              <h4>React Toolkit</h4>
+              <p>
+                A simple component library for my projects. It also has a bunch
+                of common hooks that I use and other utility stuff
+              </p>
+              <ul className="technologies">
+                <li>React</li>
+                <li>Typescript</li>
+                <li>Storybook</li>
+                <li>NPM</li>
+                <li>AWS S3 & Cloudfront</li>
+              </ul>
+            </article>
+          </section>
+        </section>
+
+        <section id="contact">
+          <h2 className="heading">
+            <span className="number">04.</span> About me
+          </h2>
+          <p className="get-in-touch">Get In Touch</p>
+          <p>
+            My inbox is always open, whether you have a question or just to say
+            hi. I will try my best to get back to you.
+          </p>
+        </section>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+      <footer className="footer">
+        <A href="//github.com/vighnesh153/vighnesh153.com_v2" openInNewTab>
+          Built by Vighnesh Raut{' '}
+          <span className="last-updated-on">
+            Last updated on: {new Date().toDateString()}
           </span>
-        </a>
+        </A>
       </footer>
     </div>
   );
