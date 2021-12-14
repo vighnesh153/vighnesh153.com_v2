@@ -1,30 +1,12 @@
 import type { NextPage } from 'next';
 
 import A from 'components/A';
+import NavBar from 'components/NavBar';
 
 const Home: NextPage = () => {
   return (
     <div className="container">
-      <header>
-        <div className="logo">Logo</div>
-        <nav>
-          <ul>
-            <li className="nav-link">
-              <a href="#about">About</a>
-            </li>
-            <li className="nav-link">
-              <a href="#experience">Experience</a>
-            </li>
-            <li className="nav-link">
-              <a href="#projects">Projects</a>
-            </li>
-            <li className="nav-link">
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-          <a href="#">Resume</a>
-        </nav>
-      </header>
+      <NavBar />
 
       <main className="main">
         <section className="introduction">
