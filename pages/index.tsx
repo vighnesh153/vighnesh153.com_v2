@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Head from 'next/head';
 
 import Anchor from 'components/Anchor';
 import NavBar from 'components/NavBar';
@@ -6,6 +7,10 @@ import NavBar from 'components/NavBar';
 const Home: NextPage = () => {
   return (
     <div className="container">
+      <Head>
+        <title>Vighnesh Raut</title>
+      </Head>
+
       <NavBar />
 
       <main id="main" className="main">
