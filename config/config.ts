@@ -9,6 +9,10 @@ const config = {
     { name: 'Projects', url: '/#projects' },
     { name: 'Contact', url: '/#contact' },
   ],
+  resume: {
+    name: 'Resume',
+    url: '#',
+  },
 };
 
 export default config;

@@ -3,67 +3,52 @@
   --color-primary-h: 216;
   --color-primary-s: 65%;
   --color-primary-l: 11%;
-  --color-primary: hsl(
-    var(--color-primary-h),
-    var(--color-primary-s),
-    var(--color-primary-l)
-  );
+  --color-primary: var(--color-primary-h), var(--color-primary-s),
+    var(--color-primary-l);
   --color-primary-demo: hsl(216, 65%, 11%);
 
   // Primary light
   --color-primary-light-h: 218;
   --color-primary-light-s: 58%;
   --color-primary-light-l: 16%;
-  --color-primary-light: hsl(
-    var(--color-primary-light-h),
-    var(--color-primary-light-s),
-    var(--color-primary-light-l)
-  );
+  --color-primary-light: var(--color-primary-light-h),
+    var(--color-primary-light-s), var(--color-primary-light-l);
   --color-primary-light-demo: hsl(218, 58%, 16%);
 
   // Primary dark
   --color-primary-dark-h: 218;
   --color-primary-dark-s: 80%;
   --color-primary-dark-l: 6%;
-  --color-primary-dark: hsl(
-    var(--color-primary-dark-h),
-    var(--color-primary-dark-s),
-    var(--color-primary-dark-l)
-  );
+  --color-primary-dark: var(--color-primary-dark-h), var(--color-primary-dark-s),
+    var(--color-primary-dark-l);
   --color-primary-dark-demo: hsl(218, 80%, 6%);
 
   // Secondary
   --color-secondary-h: 166;
   --color-secondary-s: 100%;
   --color-secondary-l: 70%;
-  --color-secondary: hsl(
-    var(--color-secondary-h),
-    var(--color-secondary-s),
-    var(--color-secondary-l)
-  );
-  --color-secondary-demo: hsl(166, 100%, 70%);
+  --color-secondary: var(--color-secondary-h), var(--color-secondary-s),
+    var(--color-secondary-l);
+  --color-secondary-demo: 166, 100%, 70%;
 
   --color-5-h: 266;
   --color-5-s: 27%;
   --color-5-l: 53%;
-  --color-5: hsl(var(--color-5-h), var(--color-5-s), var(--color-5-l));
+  --color-5: var(--color-5-h), var(--color-5-s), var(--color-5-l);
   --color-5-demo: hsl(266, 27%, 53%);
 
   --color-6-h: 190;
   --color-6-s: 11%;
   --color-6-l: 68%;
-  --color-6: hsl(var(--color-6-h), var(--color-6-s), var(--color-6-l));
+  --color-6: var(--color-6-h), var(--color-6-s), var(--color-6-l);
   --color-6-demo: hsl(190, 11%, 68%);
 
   // Text color
   --major-text-color-h: 226;
   --major-text-color-s: 70%;
   --major-text-color-l: 88%;
-  --major-text-color: hsl(
-    var(--major-text-color-h),
-    var(--major-text-color-s),
-    var(--major-text-color-l)
-  );
+  --major-text-color: var(--major-text-color-h), var(--major-text-color-s),
+    var(--major-text-color-l);
   --major-text-color-demo: hsl(226, 70%, 88%);
 
   --logo-size: 40px;
@@ -93,7 +78,7 @@ html,
 body {
   font-family: 'Inconsolata', monospace;
 
-  background-color: var(--color-primary);
+  background-color: hsl(var(--color-primary));
 }
 
 body.blur {
@@ -141,5 +126,11 @@ a {
 .standard-transition {
   @media (prefers-reduced-motion: no-preference) {
     transition: var(--standard-transition);
+  }
+}
+
+.focus-dashed-outline {
+  &:focus-visible {
+    outline: 3px dashed currentColor;
   }
 }
