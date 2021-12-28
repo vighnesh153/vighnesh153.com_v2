@@ -3,10 +3,21 @@
 }
 
 .main {
+  max-width: 1200px;
   padding: 4rem 0;
-  flex: 1;
+  margin: auto;
+
   display: flex;
   flex-direction: column;
+  flex: 1;
+
+  @media (width >= 768px) {
+    padding: 4rem 50px;
+  }
+
+  @media (width >= 1000px) {
+    padding: 4rem 100px;
+  }
 }
 
 .footer {

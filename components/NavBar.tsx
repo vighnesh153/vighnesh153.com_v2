@@ -66,10 +66,7 @@ const NavBar__Hamburger = (): JSX.Element => {
               </li>
             ))}
           </ol>
-          <a
-            href={config.resume.url}
-            className="header__resume fast-transition"
-          >
+          <a href={config.resume.url} className="header__resume awesome-link">
             {config.resume.name}
           </a>
         </nav>
@@ -100,7 +97,7 @@ const NavBar__Horizontal = (): JSX.Element => {
           </li>
         ))}
       </ol>
-      <a href={config.resume.url} className="header__resume fast-transition">
+      <a href={config.resume.url} className="header__resume awesome-link">
         {config.resume.name}
       </a>
     </nav>
