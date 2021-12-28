@@ -1,0 +1,17 @@
+.focus-dashed-outline {
+  &:focus-visible {
+    outline: 3px dashed currentColor;
+  }
+}
+
+.only-below-768 {
+  @media (width >= 768px) {
+    display: none !important;
+  }
+}
+
+.at-and-above768 {
+  @media (width < 768px) {
+    display: none !important;
+  }
+}

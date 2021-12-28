@@ -1,0 +1,43 @@
+:root {
+  --t-100: 10px;
+  --t-200: 12px;
+  --t-300: 14px;
+  --t-400: 16px;
+  --t-500: 18px;
+  --t-600: 20px;
+  --t-700: 24px;
+  --t-800: 28px;
+  --t-900: 32px;
+  --t-1000: 40px;
+}
+
+.t-100 {
+  font-size: var(--t-100) !important;
+}
+.t-200 {
+  font-size: var(--t-200) !important;
+}
+.t-300 {
+  font-size: var(--t-300) !important;
+}
+.t-400 {
+  font-size: var(--t-400) !important;
+}
+.t-500 {
+  font-size: var(--t-500) !important;
+}
+.t-600 {
+  font-size: var(--t-600) !important;
+}
+.t-700 {
+  font-size: var(--t-700) !important;
+}
+.t-800 {
+  font-size: var(--t-800) !important;
+}
+.t-900 {
+  font-size: var(--t-900) !important;
+}
+.t-1000 {
+  font-size: var(--t-1000) !important;
+}
