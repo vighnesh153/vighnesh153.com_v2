@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     <div className="container">
       <NavBar />
 
-      <main className="main">
+      <main id="main" className="main">
         <section className="introduction">
           <h2 hidden>Introduction</h2>
           <p>Hi, my name is</p>
