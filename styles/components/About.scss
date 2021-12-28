@@ -1,0 +1,30 @@
+.about {
+  margin-top: 30vh;
+  padding-top: 10vh;
+
+  p,
+  .skills-list {
+    font-size: var(--t-600);
+    color: hsla(var(--major-text-color), 60%);
+    line-height: 1.3;
+  }
+
+  .skills-list {
+    margin-top: 2rem;
+    list-style: none;
+
+    li {
+      padding-left: 2rem;
+      position: relative;
+
+      &::before {
+        content: '▹';
+        position: absolute;
+        left: 0;
+
+        color: hsl(var(--color-secondary));
+        font-size: var(--t-600);
+      }
+    }
+  }
+}
