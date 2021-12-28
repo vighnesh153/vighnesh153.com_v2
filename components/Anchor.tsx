@@ -4,15 +4,15 @@
 
 import React, { FC, HTMLProps } from 'react';
 
-interface AProps extends Omit<HTMLProps<HTMLAnchorElement>, 'ref' | 'as'> {
+interface AnchorProps extends Omit<HTMLProps<HTMLAnchorElement>, 'ref' | 'as'> {
   openInNewTab?: boolean;
 }
 
-const A: FC<AProps> = ({ openInNewTab, ...props }) => {
+const Anchor: FC<AnchorProps> = ({ openInNewTab, ...props }) => {
   if (openInNewTab) {
     return <a target="_blank" rel="noreferrer" {...props} />;
   }
   return <a {...props} />;
 };
 
-export default A;
+export default Anchor;

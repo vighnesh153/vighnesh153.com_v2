@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 
-import A from 'components/A';
+import Anchor from 'components/Anchor';
 import NavBar from 'components/NavBar';
 
 const Home: NextPage = () => {
@@ -149,20 +149,20 @@ const Home: NextPage = () => {
               <ul className="responsibilities">
                 <li>
                   Implemented many of the{' '}
-                  <A href="//rocket.chat" openInNewTab>
+                  <Anchor href="//rocket.chat" openInNewTab>
                     Rocket Chat
-                  </A>{' '}
+                  </Anchor>{' '}
                   features for the{' '}
-                  <A href="//mattermost.com" openInNewTab>
+                  <Anchor href="//mattermost.com" openInNewTab>
                     Mattermost
-                  </A>{' '}
+                  </Anchor>{' '}
                   chat platform
                 </li>
                 <li>
                   Lot of other utility plugins for the{' '}
-                  <A href="//mattermost.com" openInNewTab>
+                  <Anchor href="//mattermost.com" openInNewTab>
                     Mattermost
-                  </A>{' '}
+                  </Anchor>{' '}
                   chat platform
                 </li>
                 <li>Worked on amazing tech stack: ReactJS, Golang and AWS</li>
@@ -207,9 +207,9 @@ const Home: NextPage = () => {
               <img src="//google.com" alt="" />
               <p>Featured Project</p>
               <h3>
-                <A href="//spl.vighnesh153.com" openInNewTab>
+                <Anchor href="//spl.vighnesh153.com" openInNewTab>
                   Simple Programming Language (SPL)
-                </A>
+                </Anchor>
               </h3>
               <p>
                 A small programming language built with the intention of helping
@@ -222,14 +222,14 @@ const Home: NextPage = () => {
               </ul>
               <ul className="links">
                 <li>
-                  <A href="//github.com/vighnesh153/spl" openInNewTab>
+                  <Anchor href="//github.com/vighnesh153/spl" openInNewTab>
                     Octocat Icon
-                  </A>
+                  </Anchor>
                 </li>
                 <li>
-                  <A href="//spl.vighnesh153.com" openInNewTab>
+                  <Anchor href="//spl.vighnesh153.com" openInNewTab>
                     External link icon
-                  </A>
+                  </Anchor>
                 </li>
               </ul>
             </article>
@@ -238,12 +238,12 @@ const Home: NextPage = () => {
               <img src="//google.com" alt="" />
               <p>Featured Project</p>
               <h3>
-                <A
+                <Anchor
                   href="//www.npmjs.com/package/@vighnesh153/use-global-state"
                   openInNewTab
                 >
                   React useGlobalState library
-                </A>
+                </Anchor>
               </h3>
               <p>
                 A lightweight library that provides a React hook for having a
@@ -259,20 +259,20 @@ const Home: NextPage = () => {
               </ul>
               <ul className="links">
                 <li>
-                  <A
+                  <Anchor
                     href="//github.com/vighnesh153/react-use-global-state"
                     openInNewTab
                   >
                     Octocat Icon
-                  </A>
+                  </Anchor>
                 </li>
                 <li>
-                  <A
+                  <Anchor
                     href="//www.npmjs.com/package/@vighnesh153/use-global-state"
                     openInNewTab
                   >
                     External link icon
-                  </A>
+                  </Anchor>
                 </li>
               </ul>
             </article>
@@ -281,9 +281,9 @@ const Home: NextPage = () => {
               <img src="//google.com" alt="" />
               <p>Featured Project</p>
               <h3>
-                <A href="//graphics.vighnesh153.com" openInNewTab>
+                <Anchor href="//graphics.vighnesh153.com" openInNewTab>
                   Javascript Canvas API illustrations
-                </A>
+                </Anchor>
               </h3>
               <p>
                 Manipulation of the graphics using the HTML Canvas API in
@@ -297,17 +297,17 @@ const Home: NextPage = () => {
               </ul>
               <ul className="links">
                 <li>
-                  <A
+                  <Anchor
                     href="//github.com/vighnesh153/canvas-api-illustrations"
                     openInNewTab
                   >
                     Octocat Icon
-                  </A>
+                  </Anchor>
                 </li>
                 <li>
-                  <A href="//graphics.vighnesh153.com" openInNewTab>
+                  <Anchor href="//graphics.vighnesh153.com" openInNewTab>
                     External link icon
-                  </A>
+                  </Anchor>
                 </li>
               </ul>
             </article>
@@ -320,14 +320,14 @@ const Home: NextPage = () => {
               <img src="//google.com" alt="" className="card-icon" />
               <ul className="links">
                 <li>
-                  <A href="#" openInNewTab>
+                  <Anchor href="#" openInNewTab>
                     Octocat Icon
-                  </A>
+                  </Anchor>
                 </li>
                 <li>
-                  <A href="//blogs.vighnesh153.com" openInNewTab>
+                  <Anchor href="//blogs.vighnesh153.com" openInNewTab>
                     External link icon
-                  </A>
+                  </Anchor>
                 </li>
               </ul>
               <h4>Personal Blog</h4>
@@ -344,14 +344,17 @@ const Home: NextPage = () => {
               <img src="//google.com" alt="" className="card-icon" />
               <ul className="links">
                 <li>
-                  <A href="//github.com/vighnesh153/react-toolkit" openInNewTab>
+                  <Anchor
+                    href="//github.com/vighnesh153/react-toolkit"
+                    openInNewTab
+                  >
                     Octocat Icon
-                  </A>
+                  </Anchor>
                 </li>
                 <li>
-                  <A href="//react-toolkit.vighnesh153.com/" openInNewTab>
+                  <Anchor href="//react-toolkit.vighnesh153.com/" openInNewTab>
                     External link icon
-                  </A>
+                  </Anchor>
                 </li>
               </ul>
               <h4>React Toolkit</h4>
@@ -383,12 +386,12 @@ const Home: NextPage = () => {
       </main>
 
       <footer className="footer">
-        <A href="//github.com/vighnesh153/vighnesh153.com_v2" openInNewTab>
+        <Anchor href="//github.com/vighnesh153/vighnesh153.com_v2" openInNewTab>
           Built by Vighnesh Raut{' '}
           <span className="last-updated-on">
             Last updated on: {new Date().toDateString()}
           </span>
-        </A>
+        </Anchor>
       </footer>
     </div>
   );
