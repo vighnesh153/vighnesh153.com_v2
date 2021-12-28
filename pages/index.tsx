@@ -3,6 +3,7 @@ import Head from 'next/head';
 
 import Anchor from 'components/Anchor';
 import NavBar from 'components/NavBar';
+import Introduction from 'components/Introduction';
 
 const Home: NextPage = () => {
   return (
@@ -14,17 +15,7 @@ const Home: NextPage = () => {
       <NavBar />
 
       <main id="main" className="main">
-        <section className="introduction">
-          <h2 hidden>Introduction</h2>
-          <p>Hi, my name is</p>
-          <p>Vighnesh Raut</p>
-          <p>I build things for fun.</p>
-          <p>
-            I am a Computer Science grad with a sweet tooth for mathematics.
-            Love to manipulate graphics using code and build end-to-end systems.
-          </p>
-          <a href="#contact">Get In Touch</a>
-        </section>
+        <Introduction />
 
         <section id="about">
           <h2 className="heading">

@@ -1,0 +1,39 @@
+@import 'styles/mixins';
+
+.introduction {
+  padding-top: 8vh;
+
+  .hi {
+    color: hsl(var(--color-secondary));
+  }
+
+  .name {
+    margin-top: 1rem;
+
+    color: hsl(var(--major-text-color));
+    font-weight: bolder;
+    word-spacing: -10px;
+  }
+
+  .build-things {
+    margin-top: 1rem;
+
+    color: hsla(var(--major-text-color), 70%);
+    font-weight: bolder;
+    word-spacing: -10px;
+  }
+
+  .description {
+    margin-top: 1.5rem;
+
+    color: hsla(var(--major-text-color), 60%);
+    line-height: 1.5;
+  }
+
+  .contact {
+    display: inline-block;
+    margin-top: 2rem;
+
+    color: hsl(var(--color-secondary));
+  }
+}

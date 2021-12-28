@@ -39,3 +39,28 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.awesome-link {
+  $length: 15px;
+  $width: 2px;
+  $bg-image: linear-gradient(currentColor 0%, currentColor 0%);
+
+  padding: 1rem 1.5rem;
+
+  background-image: $bg-image, $bg-image, $bg-image, $bg-image;
+  background-size: $length $width, $width $length, $width $length,
+    $length $width;
+  background-position: 100% 0, 100% 0, 0 100%, 0 100%;
+  background-repeat: no-repeat;
+
+  transition: var(--standard-transition);
+
+  &:hover,
+  &:focus-within {
+    font-weight: bold;
+
+    @media (prefers-reduced-motion: no-preference) {
+      background-position: 0 0, 100% 100%, 0 0, 100% 100%;
+    }
+  }
+}
