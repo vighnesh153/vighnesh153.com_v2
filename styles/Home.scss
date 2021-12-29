@@ -62,6 +62,13 @@
       }
     }
 
+    a.link {
+      &:hover,
+      &:focus-within {
+        color: hsl(var(--color-secondary));
+      }
+    }
+
     a.inline-link {
       position: relative;
       color: hsl(var(--color-secondary));

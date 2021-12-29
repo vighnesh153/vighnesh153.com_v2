@@ -1,4 +1,6 @@
 .focus-dashed-outline {
+  outline-offset: 0.5rem;
+
   &:focus-visible {
     outline: 3px dashed currentColor;
   }

@@ -3,7 +3,8 @@
  */
 
 import React from 'react';
-import Anchor from '../components/Anchor';
+
+import Anchor from 'components/Anchor';
 
 const uiConstants = {
   navLinks: [
@@ -135,7 +136,7 @@ const config = {
       {
         id: 'spl',
         heading: 'Simple Programming Language (SPL)',
-        imageUrl: 'https://google.com', // TODO
+        imageUrl: '/spl.png',
         description:
           'A small programming language built with the intention of helping people start with their programming journey.',
         technologies: ['Typescript', 'AWS S3 & Cloudfront', 'Github Actions'],
@@ -147,7 +148,7 @@ const config = {
       {
         id: 'use-global-state',
         heading: 'React useGlobalState library',
-        imageUrl: 'https://google.com', // TODO
+        imageUrl: '/useGlobalState.png',
         description: (
           <>
             A lightweight library that provides a React hook for having a piece
@@ -165,7 +166,7 @@ const config = {
       {
         id: 'canvas-illustrations',
         heading: 'Javascript Canvas API illustrations',
-        imageUrl: 'https://google.com', // TODO
+        imageUrl: '/canvas-illustrations.png',
         description:
           'Manipulation of the graphics using the HTML Canvas API in Javascript.',
         technologies: [

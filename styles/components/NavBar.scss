@@ -24,7 +24,6 @@ header > nav {
 
 .header-menu__logo {
   color: hsl(var(--color-secondary));
-  padding: 0.5rem;
   position: relative;
 
   cursor: pointer;
@@ -48,10 +47,9 @@ header > nav {
 }
 
 .header__hamburger-menu__hamburger-btn {
-  width: 60px;
-  height: 50px;
+  width: 40px;
+  height: 30px;
   margin: 0;
-  padding: 10px;
   position: relative;
   right: 0;
 
