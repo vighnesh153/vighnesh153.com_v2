@@ -9,7 +9,7 @@ header > nav {
 
   nav {
     a {
-      font-size: clamp(var(--t-500), 2vw, var(--t-600));
+      font-size: var(--t-600);
 
       color: hsl(var(--major-text-color));
 

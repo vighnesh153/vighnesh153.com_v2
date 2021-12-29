@@ -62,7 +62,7 @@
       }
     }
 
-    a {
+    a.inline-link {
       position: relative;
       color: hsl(var(--color-secondary));
       white-space: nowrap;
@@ -92,6 +92,20 @@
             right: 0;
           }
         }
+      }
+    }
+
+    li.common-list-item {
+      padding-left: 2rem;
+      position: relative;
+
+      &::before {
+        content: '▹';
+        position: absolute;
+        left: 0;
+
+        color: hsl(var(--color-secondary));
+        font-size: var(--t-600);
       }
     }
   }
