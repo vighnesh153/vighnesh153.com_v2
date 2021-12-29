@@ -5,6 +5,19 @@
 import React from 'react';
 import Anchor from '../components/Anchor';
 
+const uiConstants = {
+  navLinks: [
+    { name: 'About', url: '/#about' },
+    { name: 'Experience', url: '/#experience' },
+    { name: 'Projects', url: '/#projects' },
+    { name: 'Contact', url: '/#contact' },
+  ],
+  resume: {
+    name: 'Resume',
+    url: 'https://bit.ly/vighnesh153-resume',
+  },
+};
+
 const companyUrls = {
   Amazon: 'https://amazon.com',
   SmarterCodes: 'https://smarter.codes',
@@ -12,7 +25,7 @@ const companyUrls = {
 };
 
 const config = {
-  companyUrls,
+  ...uiConstants,
   myName: 'Vighnesh Raut',
   shortSummary: 'I build things, mostly for the web.',
   summary:
@@ -53,16 +66,6 @@ const config = {
     </>
   ),
   skills: ['Javascript (ES6+)', 'Typescript', 'React', 'Nodejs'],
-  navLinks: [
-    { name: 'About', url: '/#about' },
-    { name: 'Experience', url: '/#experience' },
-    { name: 'Projects', url: '/#projects' },
-    { name: 'Contact', url: '/#contact' },
-  ],
-  resume: {
-    name: 'Resume',
-    url: '#',
-  },
   experience: [
     {
       company: 'Amazon',
@@ -127,6 +130,86 @@ const config = {
       ],
     },
   ],
+  projects: {
+    featured: [
+      {
+        id: 'spl',
+        heading: 'Simple Programming Language (SPL)',
+        imageUrl: 'https://google.com', // TODO
+        description:
+          'A small programming language built with the intention of helping people start with their programming journey.',
+        technologies: ['Typescript', 'AWS S3 & Cloudfront', 'Github Actions'],
+        links: {
+          github: '//github.com/vighnesh153/spl',
+          demo: '//spl.vighnesh153.com',
+        },
+      },
+      {
+        id: 'use-global-state',
+        heading: 'React useGlobalState library',
+        imageUrl: 'https://google.com', // TODO
+        description: (
+          <>
+            A lightweight library that provides a React hook for having a piece
+            of global state. It is similar to the useState hook from the React
+            library but with the only addition that this hook{' '}
+            <strong className="highlight">persists</strong> the state.
+          </>
+        ),
+        technologies: ['React', 'Typescript', 'NPM', 'Github Actions'],
+        links: {
+          github: '//github.com/vighnesh153/react-use-global-state',
+          demo: '//www.npmjs.com/package/@vighnesh153/use-global-state',
+        },
+      },
+      {
+        id: 'canvas-illustrations',
+        heading: 'Javascript Canvas API illustrations',
+        imageUrl: 'https://google.com', // TODO
+        description:
+          'Manipulation of the graphics using the HTML Canvas API in Javascript.',
+        technologies: [
+          'React',
+          'Typescript',
+          'AWS S3 & Cloudfront',
+          'Github Actions',
+        ],
+        links: {
+          github: '//github.com/vighnesh153/canvas-api-illustrations',
+          demo: '//graphics.vighnesh153.com',
+        },
+      },
+    ],
+    otherNoteWorthy: [
+      {
+        id: 'personal-blog',
+        heading: 'Personal Blog',
+        description: 'A place where I write about anything, mostly Technology',
+        technologies: ['React', 'Typescript', 'Vercel', 'NextJS'],
+        links: {
+          github: '',
+          demo: '//blogs.vighnesh153.com',
+        },
+      },
+      {
+        id: 'react-toolkit',
+        heading: 'React Toolkit',
+        description:
+          'A simple component library for my projects. It also has a bunch of common hooks that I use and other utility stuff',
+        technologies: [
+          'React',
+          'Typescript',
+          'Storybook',
+          'NPM',
+          'AWS S3 & Cloudfront',
+        ],
+        links: {
+          github: '//github.com/vighnesh153/react-toolkit',
+          demo: '//react-toolkit.vighnesh153.com',
+        },
+      },
+    ],
+  },
 };
 
 export default config;
