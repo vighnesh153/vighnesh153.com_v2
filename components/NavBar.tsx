@@ -7,15 +7,25 @@ import clsx from 'clsx';
 import Link from 'next/link';
 
 import Logo from 'icons/Logo';
-import config from '../config';
+import config from 'config';
+import useWindowDimensions from 'hooks/useWindowDimensions';
 
 const NavBar__Hamburger = (): JSX.Element => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { width } = useWindowDimensions();
 
   // Toggle the blur class on body based on active-ness of nav-link
   useEffect(() => {
     document.body.classList.toggle('blur', menuOpen);
   }, [menuOpen]);
+
+  // If we resize the window to be more than 768, we should
+  // close the open navigation menu.
+  useEffect(() => {
+    if (width >= 768) {
+      setMenuOpen(false);
+    }
+  }, [width]);
 
   const navActiveClass = {
     active: menuOpen,

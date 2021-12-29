@@ -12,19 +12,5 @@
   .skills-list {
     margin-top: 2rem;
     list-style: none;
-
-    li {
-      padding-left: 2rem;
-      position: relative;
-
-      &::before {
-        content: '▹';
-        position: absolute;
-        left: 0;
-
-        color: hsl(var(--color-secondary));
-        font-size: var(--t-600);
-      }
-    }
   }
 }
