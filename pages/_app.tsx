@@ -6,6 +6,7 @@ import 'styles/components/NavBar.scss';
 import 'styles/components/Introduction.scss';
 import 'styles/components/About.scss';
 import 'styles/components/Experience.scss';
+import 'styles/components/Projects.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
