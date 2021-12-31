@@ -44,6 +44,7 @@
 
   @media (width >= $cardBreakpoint) {
     max-width: unset;
+    overflow: unset;
 
     align-items: center;
   }
@@ -98,6 +99,13 @@
     grid-column: 1 / -1;
     grid-row: 1;
 
+    a {
+      height: 100%;
+
+      display: block;
+      color: hsl(var(--color-secondary));
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -118,7 +126,8 @@
         transition: var(--standard-transition);
       }
 
-      &:hover::after {
+      &:hover::after,
+      &:focus-within::after {
         pointer-events: none;
         background-color: transparent;
       }
