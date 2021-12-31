@@ -73,7 +73,12 @@ const Projects = (): JSX.Element => {
                     openInNewTab
                     className="focus-dashed-outline"
                   >
-                    <Image src={imageUrl} alt="" layout="fill" />
+                    <Image
+                      src={imageUrl}
+                      alt=""
+                      layout="fill"
+                      placeholder="blur"
+                    />
                   </Anchor>
                 </div>
               </li>
