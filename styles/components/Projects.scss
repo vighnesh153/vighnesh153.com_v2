@@ -40,6 +40,34 @@
 
   overflow: hidden;
 
+  $cardBreakpoint: 700px;
+
+  @media (width >= $cardBreakpoint) {
+    max-width: unset;
+
+    align-items: center;
+  }
+
+  &:nth-child(2n + 1) {
+    @media (width >= $cardBreakpoint) {
+      text-align: right;
+
+      .featured-project-technologies,
+      .project-links {
+        justify-content: flex-end;
+      }
+
+      .featured-project-content {
+        grid-column: 6 / -1;
+        align-items: flex-end;
+      }
+
+      .featured-project-image {
+        grid-column: 1 / 7;
+      }
+    }
+  }
+
   .featured-project-content {
     padding: 2rem;
 
@@ -48,6 +76,20 @@
 
     background-color: hsla(var(--color-primary), 95%);
     z-index: 2;
+
+    @media (width >= $cardBreakpoint) {
+      display: flex;
+      flex-direction: column;
+
+      grid-column: 1 / 8;
+      background-color: transparent;
+
+      pointer-events: none;
+
+      & * {
+        pointer-events: auto;
+      }
+    }
   }
 
   .featured-project-image {
@@ -64,6 +106,23 @@
       background-color: hsla(var(--color-secondary), 50%);
       z-index: 1;
     }
+
+    @media (width >= $cardBreakpoint) {
+      position: relative;
+
+      grid-column: 6 / -1;
+      aspect-ratio: 16 / 9;
+
+      &::after {
+        background-color: hsla(var(--color-blend), 90%);
+        transition: var(--standard-transition);
+      }
+
+      &:hover::after {
+        pointer-events: none;
+        background-color: transparent;
+      }
+    }
   }
 
   .featured-project-subheading {
@@ -73,6 +132,7 @@
 
   .featured-project-heading {
     margin-top: 0.7rem;
+    width: fit-content;
 
     color: hsl(var(--major-text-color));
     font-size: var(--t-800);
@@ -83,10 +143,17 @@
 
     color: hsla(var(--major-text-color), 70%);
     border-radius: 0.3rem;
+
+    @media (width >= $cardBreakpoint) {
+      padding: 1.5rem;
+
+      background: hsla(var(--color-primary-light), 100%);
+    }
   }
 
   .featured-project-technologies {
     margin-top: 2rem;
+    width: fit-content;
 
     display: flex;
     align-items: center;
@@ -97,10 +164,6 @@
     font-size: var(--t-500);
 
     list-style: none;
-
-    & > li {
-      //margin-right: 1.5rem;
-    }
   }
 
   .featured-project-links {

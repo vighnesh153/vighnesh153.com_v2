@@ -68,7 +68,13 @@ const Projects = (): JSX.Element => {
                   className="featured-project-image"
                   style={{ position: 'relative' }}
                 >
-                  <Image src={imageUrl} alt="" layout="fill" />
+                  <Anchor
+                    href={links.demo}
+                    openInNewTab
+                    className="focus-dashed-outline"
+                  >
+                    <Image src={imageUrl} alt="" layout="fill" />
+                  </Anchor>
                 </div>
               </li>
             )
