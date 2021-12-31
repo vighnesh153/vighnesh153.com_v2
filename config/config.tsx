@@ -6,6 +6,10 @@ import React from 'react';
 
 import Anchor from 'components/Anchor';
 
+import splImageUrl from 'static/spl.png';
+import useGlobalStateImageUrl from 'static/useGlobalState.png';
+import canvasIllustrationsImageUrl from 'static/canvas-illustrations.png';
+
 const uiConstants = {
   navLinks: [
     { name: 'About', url: '/#about' },
@@ -136,7 +140,7 @@ const config = {
       {
         id: 'spl',
         heading: 'Simple Programming Language (SPL)',
-        imageUrl: '/spl.png',
+        imageUrl: splImageUrl,
         description:
           'A small programming language built with the intention of helping people start with their programming journey.',
         technologies: ['Typescript', 'AWS S3 & Cloudfront', 'Github Actions'],
@@ -148,7 +152,7 @@ const config = {
       {
         id: 'use-global-state',
         heading: 'React useGlobalState library',
-        imageUrl: '/useGlobalState.png',
+        imageUrl: useGlobalStateImageUrl,
         description: (
           <>
             A lightweight library that provides a React hook for having a piece
@@ -166,7 +170,7 @@ const config = {
       {
         id: 'canvas-illustrations',
         heading: 'Javascript Canvas API illustrations',
-        imageUrl: '/canvas-illustrations.png',
+        imageUrl: canvasIllustrationsImageUrl,
         description:
           'Manipulation of the graphics using the HTML Canvas API in Javascript.',
         technologies: [
