@@ -31,6 +31,13 @@
     var(--color-secondary-l);
   --color-secondary-demo: hsl(166, 100%, 70%);
 
+  --color-blend-h: 205;
+  --color-blend-s: 54%;
+  --color-blend-l: 16%;
+  --color-blend: var(--color-blend-h), var(--color-blend-s),
+    var(--color-blend-l);
+  --color-blend-demo: hsl(205, 54%, 16%);
+
   --color-5-h: 266;
   --color-5-s: 27%;
   --color-5-l: 53%;
