@@ -1,0 +1,110 @@
+.projects .other-noteworthy-projects {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+
+  .other-noteworthy-projects-section-title {
+    font-size: var(--t-1000);
+    color: hsl(var(--major-text-color));
+    text-align: center;
+  }
+
+  .other-noteworthy-projects-list {
+    padding-block: 3rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+
+    list-style: none;
+
+    .other-noteworthy-project {
+      padding: 2rem 1.5rem;
+
+      background-color: hsl(var(--color-primary-light));
+      border-radius: 0.3rem;
+
+      transition: var(--standard-transition);
+
+      @media (prefers-reduced-motion: no-preference) {
+        cursor: pointer;
+
+        &:hover,
+        &:focus-within {
+          transform: translateY(-0.5rem);
+        }
+      }
+
+      .other-noteworthy-project-top-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .other-noteworthy-project-top-bar-folder {
+          width: var(--t-1000);
+
+          color: hsl(var(--color-secondary));
+        }
+
+        .other-noteworthy-project-links {
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+
+          list-style: none;
+
+          a {
+            color: hsla(var(--color-secondary));
+
+            svg {
+              width: var(--t-600);
+              color: hsl(var(--major-text-color));
+            }
+
+            &:hover,
+            &:focus-within {
+              svg {
+                color: hsl(var(--color-secondary));
+              }
+            }
+          }
+        }
+      }
+
+      .other-noteworthy-project-heading {
+        margin-top: 1.8rem;
+
+        color: hsl(var(--major-text-color));
+        font-size: var(--t-600);
+
+        &:hover,
+        &:focus-within {
+          color: hsl(var(--color-secondary));
+        }
+      }
+
+      .other-noteworthy-project-description {
+        margin-top: 0.8rem;
+
+        color: hsla(var(--major-text-color), 70%);
+        font-size: var(--t-400);
+      }
+
+      .other-noteworthy-project-technologies {
+        margin-top: 2rem;
+
+        display: flex;
+        gap: 0.3rem;
+        flex-wrap: wrap;
+
+        list-style: none;
+
+        .other-noteworthy-project-technology {
+          margin-right: 0.7rem;
+
+          font-size: var(--t-300);
+          color: hsla(var(--major-text-color), 50%);
+        }
+      }
+    }
+  }
+}

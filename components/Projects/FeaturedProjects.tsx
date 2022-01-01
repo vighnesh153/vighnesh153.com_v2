@@ -61,10 +61,7 @@ const FeaturedProjects = (): JSX.Element => {
                   </li>
                 </ul>
               </div>
-              <div
-                className="featured-project-image"
-                style={{ position: 'relative' }}
-              >
+              <div className="featured-project-image">
                 <Anchor
                   href={links.demo}
                   openInNewTab
