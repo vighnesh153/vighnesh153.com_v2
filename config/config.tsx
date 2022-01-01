@@ -189,7 +189,8 @@ const config = {
       {
         id: 'personal-blog',
         heading: 'Personal Blog',
-        description: 'A place where I write about anything, mostly Technology',
+        description:
+          'A place where I write about anything that I like, mostly Technology',
         technologies: ['React', 'Typescript', 'Vercel', 'NextJS'],
         links: {
           github: '',

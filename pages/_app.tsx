@@ -21,6 +21,7 @@ import 'styles/components/Experience.scss';
 // Projects component styles
 import 'styles/components/Projects.scss';
 import 'styles/components/FeaturedProjects.scss';
+import 'styles/components/OtherNoteworthyProjects.scss';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
