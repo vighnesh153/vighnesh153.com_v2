@@ -1,0 +1,42 @@
+.contact-me {
+  margin-top: 10vh;
+  padding-top: 10vh;
+  margin-bottom: 20vh;
+
+  text-align: center;
+
+  .contact-me-subtitle {
+    color: hsl(var(--color-secondary));
+    font-size: var(--t-600);
+  }
+
+  .contact-me-heading {
+    margin-top: 1rem;
+
+    color: hsl(var(--major-text-color));
+    font-size: var(--t-1100);
+  }
+
+  .contact-me-description {
+    max-width: 600px;
+    margin: 1rem auto 0;
+
+    color: hsla(var(--major-text-color), 70%);
+    font-size: var(--t-600);
+    line-height: 1.45;
+    word-spacing: -0.3rem;
+  }
+
+  .contact-me-email {
+    margin-top: 3rem;
+
+    display: inline-block;
+
+    color: hsl(var(--color-secondary));
+
+    &:hover,
+    &:focus-within {
+      background-color: hsla(var(--color-secondary), 5%);
+    }
+  }
+}

@@ -36,5 +36,10 @@
     margin-top: 2rem;
 
     color: hsl(var(--color-secondary));
+
+    &:hover,
+    &:focus-within {
+      background-color: hsla(var(--color-secondary), 5%);
+    }
   }
 }

@@ -174,7 +174,7 @@ const NavBar__Hamburger = (): JSX.Element => {
             {config.navLinks.map(({ name, url }) => (
               <li className="nav-link" key={name}>
                 <a
-                  className="fast-transition"
+                  className="fast-transition focus-dashed-outline"
                   href={url}
                   onClick={toggleMenu(false)}
                   {...(menuOpen ? {} : removeTabFocus)}
@@ -186,7 +186,7 @@ const NavBar__Hamburger = (): JSX.Element => {
           </ol>
           <a
             href={config.resume.url}
-            className="header__resume awesome-link"
+            className="header__resume awesome-link focus-dashed-outline"
             {...(menuOpen ? {} : removeTabFocus)}
           >
             {config.resume.name}
@@ -213,13 +213,16 @@ const NavBar__Horizontal = (): JSX.Element => {
       <ol>
         {config.navLinks.map(({ name, url }) => (
           <li className="nav-link" key={name}>
-            <a href={url} className="fast-transition">
+            <a href={url} className="fast-transition focus-dashed-outline">
               {name}
             </a>
           </li>
         ))}
       </ol>
-      <a href={config.resume.url} className="header__resume awesome-link">
+      <a
+        href={config.resume.url}
+        className="header__resume awesome-link focus-dashed-outline"
+      >
         {config.resume.name}
       </a>
     </nav>

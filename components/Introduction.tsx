@@ -14,7 +14,10 @@ const Introduction = (): JSX.Element => {
       <p className="name t-1300">{config.myName}.</p>
       <p className="build-things t-1300">{config.shortSummary}</p>
       <p className="description t-600">{config.summary}</p>
-      <a href="#contact" className="contact awesome-link t-600">
+      <a
+        href="#contact"
+        className="contact awesome-link focus-dashed-outline t-600"
+      >
         Get In Touch
       </a>
     </section>

@@ -7,6 +7,7 @@ import Introduction from 'components/Introduction';
 import About from 'components/About';
 import Experience from 'components/Experience';
 import Projects from 'components/Projects';
+import ContactMe from 'components/ContactMe';
 
 const Home: NextPage = () => {
   return (
@@ -22,17 +23,7 @@ const Home: NextPage = () => {
         <About />
         <Experience />
         <Projects />
-
-        <section id="contact">
-          <h2 className="heading">
-            <span className="number">04.</span> About me
-          </h2>
-          <p className="get-in-touch">Get In Touch</p>
-          <p>
-            My inbox is always open, whether you have a question or just to say
-            hi. I will try my best to get back to you.
-          </p>
-        </section>
+        <ContactMe />
       </main>
 
       <footer className="footer">
