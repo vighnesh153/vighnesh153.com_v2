@@ -33,6 +33,8 @@ const config = {
   ...uiConstants,
   myName: 'Vighnesh Raut',
   emailAddress: 'me@vighnesh153.com',
+  githubRepoUrl: 'https://github.com/vighnesh153/vighnesh153.com_v2',
+  brittanyChiangWebsite: 'https://brittanychiang.com/',
   shortSummary: 'I build things, mostly for the web.',
   summary:
     'I am a Software Engineer specializing in building exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products for different causes.',
