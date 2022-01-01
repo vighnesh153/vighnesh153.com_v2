@@ -1,0 +1,157 @@
+.projects .featured-projects .featured-projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  list-style: none;
+}
+
+.projects .featured-projects .featured-projects-list .featured-project {
+  max-width: 600px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  border-radius: 0.3rem;
+
+  overflow: hidden;
+
+  $cardBreakpoint: 700px;
+
+  @media (width >= $cardBreakpoint) {
+    max-width: unset;
+    overflow: unset;
+
+    align-items: center;
+  }
+
+  &:nth-child(2n + 1) {
+    @media (width >= $cardBreakpoint) {
+      text-align: right;
+
+      .featured-project-technologies,
+      .project-links {
+        justify-content: flex-end;
+      }
+
+      .featured-project-content {
+        grid-column: 6 / -1;
+        align-items: flex-end;
+      }
+
+      .featured-project-image {
+        grid-column: 1 / 7;
+      }
+    }
+  }
+
+  .featured-project-content {
+    padding: 2rem;
+
+    grid-column: 1 / -1;
+    grid-row: 1;
+
+    background-color: hsla(var(--color-primary), 95%);
+    z-index: 2;
+
+    @media (width >= $cardBreakpoint) {
+      display: flex;
+      flex-direction: column;
+
+      grid-column: 1 / 8;
+      background-color: transparent;
+
+      pointer-events: none;
+
+      & * {
+        pointer-events: auto;
+      }
+    }
+  }
+
+  .featured-project-image {
+    position: relative;
+
+    grid-column: 1 / -1;
+    grid-row: 1;
+
+    a {
+      height: 100%;
+
+      display: block;
+      color: hsl(var(--color-secondary));
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+
+      background-color: hsla(var(--color-secondary), 50%);
+      z-index: 1;
+    }
+
+    @media (width >= $cardBreakpoint) {
+      position: relative;
+
+      grid-column: 6 / -1;
+      aspect-ratio: 16 / 9;
+
+      &::after {
+        background-color: hsla(var(--color-blend), 90%);
+        transition: var(--standard-transition);
+      }
+
+      &:hover::after,
+      &:focus-within::after {
+        pointer-events: none;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .featured-project-subheading {
+    color: hsl(var(--color-secondary));
+    font-size: var(--t-500);
+  }
+
+  .featured-project-heading {
+    margin-top: 0.7rem;
+    width: fit-content;
+
+    color: hsl(var(--major-text-color));
+    font-size: var(--t-800);
+  }
+
+  .featured-project-description {
+    margin-top: 2rem;
+
+    color: hsla(var(--major-text-color), 70%);
+    border-radius: 0.3rem;
+
+    @media (width >= $cardBreakpoint) {
+      padding: 1.5rem;
+
+      background: hsla(var(--color-primary-light), 100%);
+    }
+  }
+
+  .featured-project-technologies {
+    margin-top: 2rem;
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+
+    color: hsla(var(--major-text-color), 70%);
+    font-size: var(--t-500);
+
+    list-style: none;
+  }
+
+  .featured-project-links {
+    margin-top: 2rem;
+  }
+}
