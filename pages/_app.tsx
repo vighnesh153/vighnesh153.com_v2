@@ -26,6 +26,9 @@ import 'styles/components/OtherNoteworthyProjects.scss';
 // ContactMe component styles
 import 'styles/components/ContactMe.scss';
 
+// Footer styles
+import 'styles/components/Footer.scss';
+
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
 }
