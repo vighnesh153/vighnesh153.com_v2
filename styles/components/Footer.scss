@@ -15,4 +15,33 @@
   a:focus-within {
     color: hsla(var(--color-secondary));
   }
+
+  .footer-social-links {
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    list-style: none;
+
+    .footer-social-link {
+      color: hsla(var(--major-text-color));
+
+      a {
+        transition: var(--standard-transition);
+
+        &:hover,
+        &:focus-within {
+          color: hsla(var(--color-secondary));
+          transform: translateY(-3px);
+        }
+      }
+
+      svg {
+        width: var(--t-700);
+      }
+    }
+  }
 }
