@@ -1,0 +1,41 @@
+.social-links-banner {
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+
+  .social-link {
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+
+    a {
+      padding: 10px;
+
+      display: inline-block;
+      transition: var(--standard-transition);
+
+      &:hover,
+      &:focus-within {
+        color: hsla(var(--color-secondary));
+        transform: translateY(-3px);
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  &:after {
+    content: '';
+    width: 1px;
+    height: 90px;
+    margin: 0 auto;
+
+    display: block;
+
+    background-color: hsla(var(--major-text-color));
+  }
+}

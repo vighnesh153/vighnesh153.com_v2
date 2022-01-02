@@ -39,6 +39,39 @@ a.inline-link {
   }
 }
 
+.side {
+  width: 40px;
+  position: fixed;
+  bottom: 0;
+
+  z-index: 10;
+  color: hsla(var(--major-text-color), 100%);
+
+  &.left {
+    left: 40px;
+    right: auto;
+  }
+
+  &.right {
+    left: auto;
+    right: 40px;
+  }
+
+  @media (width <= 1080px) {
+    &.left {
+      left: 20px;
+    }
+
+    &.right {
+      right: 20px;
+    }
+  }
+
+  @media (width <= 768px) {
+    display: none;
+  }
+}
+
 .only-below-768 {
   @media (width >= 768px) {
     display: none !important;

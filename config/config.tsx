@@ -10,6 +10,7 @@ import experience from './experience';
 import aboutMe from './about_me';
 import { shortSummary, summary } from './summary';
 import { smallConstants } from './base';
+import socialLinks from './social_links';
 
 const config = {
   ...smallConstants,
@@ -17,6 +18,7 @@ const config = {
   summary,
   aboutMe,
   experience,
+  socialLinks,
   projects: {
     featured: featuredProjects,
     otherNoteWorthy: otherNoteworthyProjects,

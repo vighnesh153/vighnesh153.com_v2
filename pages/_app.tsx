@@ -1,5 +1,8 @@
 import type { AppProps } from 'next/app';
 
+// Common styles
+import 'styles/components/SocialLinksBanner.scss';
+
 // Global styles
 import 'styles/globals.scss';
 

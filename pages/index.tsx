@@ -8,6 +8,7 @@ import Experience from 'components/Experience';
 import Projects from 'components/Projects';
 import ContactMe from 'components/ContactMe';
 import Footer from 'components/Footer';
+import SocialLinksBanner from 'components/SocialLinksBanner';
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       </Head>
 
       <NavBar />
+      <SocialLinksBanner />
 
       <main id="main" className="main">
         <Introduction />
