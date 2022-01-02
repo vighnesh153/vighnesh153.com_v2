@@ -18,6 +18,10 @@ const Home: NextPage = () => {
         <title>Vighnesh Raut</title>
       </Head>
 
+      <a href="#main" className="skip-to-content">
+        Skip to Content
+      </a>
+
       <NavBar />
       <SocialLinksBanner />
       <EmailAddressBanner />
