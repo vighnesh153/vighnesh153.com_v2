@@ -1,0 +1,32 @@
+.email-address-banner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: hsla(var(--major-text-color));
+  }
+
+  a {
+    display: inline-block;
+
+    font-family: monospace;
+    font-size: var(--t-400);
+    writing-mode: vertical-rl;
+
+    transition: var(--standard-transition);
+
+    &:hover,
+    &:focus-within {
+      color: hsla(var(--color-secondary));
+
+      transform: translateY(-3px);
+    }
+  }
+}

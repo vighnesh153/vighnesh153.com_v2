@@ -9,6 +9,7 @@ import Projects from 'components/Projects';
 import ContactMe from 'components/ContactMe';
 import Footer from 'components/Footer';
 import SocialLinksBanner from 'components/SocialLinksBanner';
+import EmailAddressBanner from 'components/EmailAddressBanner';
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
 
       <NavBar />
       <SocialLinksBanner />
+      <EmailAddressBanner />
 
       <main id="main" className="main">
         <Introduction />
