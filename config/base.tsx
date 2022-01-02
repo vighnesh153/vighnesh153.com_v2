@@ -23,10 +23,5 @@ export const smallConstants = {
     name: 'Resume',
     url: 'https://bit.ly/vighnesh153-resume',
   },
-  socialLinks: {
-    github: 'https://github.com/vighnesh153',
-    linkedIn: 'https://www.linkedin.com/in/vighnesh153',
-    codepen: 'https://codepen.io/vighnesh153',
-  },
   skills: ['Javascript (ES6+)', 'Typescript', 'React', 'Nodejs'],
 };
