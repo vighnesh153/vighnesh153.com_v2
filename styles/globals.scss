@@ -64,3 +64,24 @@ a {
     }
   }
 }
+
+.skip-to-content {
+  position: fixed;
+  top: -100px;
+  left: 10px;
+  padding: 1rem 2rem;
+
+  background-color: hsla(var(--color-secondary));
+  color: hsla(var(--color-primary));
+  font-weight: bold;
+  font-size: var(--t-600);
+  border: 1px solid hsla(var(--color-secondary));
+
+  z-index: 100;
+
+  transition: var(--standard-transition);
+
+  &:focus-visible {
+    top: 10px;
+  }
+}
