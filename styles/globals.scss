@@ -85,3 +85,8 @@ a {
     top: 10px;
   }
 }
+
+::selection {
+  background-color: hsla(var(--color-primary-light));
+  color: hsla(var(--color-secondary));
+}
