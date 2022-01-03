@@ -7,6 +7,14 @@
     var(--color-primary-l);
   --color-primary-demo: hsl(216, 65%, 11%);
 
+  // Primary shadow
+  --color-primary-shadow-h: 216;
+  --color-primary-shadow-s: 86%;
+  --color-primary-shadow-l: 6%;
+  --color-primary-shadow: var(--color-primary-shadow-h),
+    var(--color-primary-shadow-s), var(--color-primary-shadow-l);
+  --color-primary-shadow-demo: hsl(216, 86%, 6%);
+
   // Primary light
   --color-primary-light-h: 218;
   --color-primary-light-s: 58%;

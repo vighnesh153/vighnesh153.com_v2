@@ -9,6 +9,7 @@ import Link from 'next/link';
 import Logo from 'icons/Logo';
 import config from 'config';
 import useWindowDimensions from 'hooks/useWindowDimensions';
+import useScrollDirection from 'hooks/useScrollDirection';
 import { KeyCodes } from '../util';
 
 const NavBar__Hamburger = (): JSX.Element => {
@@ -230,8 +231,24 @@ const NavBar__Horizontal = (): JSX.Element => {
 };
 
 const NavBar: React.FC = () => {
+  const scrollDirection = useScrollDirection();
+  const [scrolledToTop, setScrolledToTop] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolledToTop(window.pageYOffset < 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header>
+    <header
+      className={clsx(`scroll-${scrollDirection}`, {
+        'scroll-at-top': scrolledToTop,
+      })}
+    >
       <nav>
         <Link href="/">
           <a className="header-menu__logo focus-dashed-outline">
