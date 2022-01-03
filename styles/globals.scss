@@ -93,6 +93,23 @@ a {
   }
 }
 
+.regular-btn {
+  padding: 1rem 2rem;
+
+  border: 1px solid hsla(var(--color-secondary));
+  border-radius: 0.3rem;
+  background: transparent;
+  color: hsla(var(--color-secondary));
+  font-size: var(--t-500);
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: hsla(var(--color-secondary), 10%);
+  }
+}
+
 ::selection {
   background-color: hsla(var(--color-primary-light));
   color: hsla(var(--color-secondary));
