@@ -2,7 +2,7 @@
  * @author Vighnesh Raut <me@vighnesh153.com>
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 
 import config from 'config';
 
@@ -12,7 +12,12 @@ import ExternalLink from 'icons/ExternalLink';
 
 import Anchor from 'components/Anchor';
 
+const PROJECTS_COUNT_THRESHOLD = 6;
+const noteworthyProjects = config.projects.otherNoteWorthy;
+
 const OtherNoteworthyProjects = (): JSX.Element => {
+  const [showingAll, setShowingAll] = useState(false);
+
   return (
     <section
       id="other-noteworthy-projects"
@@ -23,8 +28,12 @@ const OtherNoteworthyProjects = (): JSX.Element => {
       </h3>
 
       <ul className="other-noteworthy-projects-list">
-        {config.projects.otherNoteWorthy.map(
-          ({ id, technologies, description, heading, links }) => (
+        {noteworthyProjects
+          .slice(
+            0,
+            showingAll ? noteworthyProjects.length : PROJECTS_COUNT_THRESHOLD
+          )
+          .map(({ id, technologies, description, heading, links }) => (
             <li id={id} key={id} className="other-noteworthy-project">
               <div className="other-noteworthy-project-top-bar">
                 <Folder
@@ -80,9 +89,17 @@ const OtherNoteworthyProjects = (): JSX.Element => {
                 ))}
               </ul>
             </li>
-          )
-        )}
+          ))}
       </ul>
+
+      {noteworthyProjects.length > PROJECTS_COUNT_THRESHOLD && (
+        <button
+          className="show-more-btn regular-btn focus-dashed-outline"
+          onClick={() => setShowingAll(!showingAll)}
+        >
+          Show {showingAll ? 'less' : 'more'}
+        </button>
+      )}
     </section>
   );
 };
