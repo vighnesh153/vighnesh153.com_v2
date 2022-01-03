@@ -5,6 +5,13 @@
 
 :root {
   --logo-size: 40px;
+
+  --root-padding: 2rem;
+
+  --nav-height: 107px;
+  @media (width >= 768) {
+    --nav-height: 117px;
+  }
 }
 
 *,

@@ -1,5 +1,35 @@
 @import 'styles/mixins';
 
+header {
+  width: 100vw;
+  height: var(--nav-height);
+  padding: 0 var(--root-padding);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-color: hsla(var(--color-primary));
+  z-index: 99;
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: var(--slow-transition);
+
+    &.scroll-down {
+      transform: translateY(calc(var(--nav-height) * -1));
+    }
+
+    &.scroll-up {
+      transform: translateY(0);
+      box-shadow: 0 10px 30px -10px hsla(var(--color-primary-shadow), 70%);
+    }
+
+    &.scroll-at-top {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  }
+}
+
 header > nav {
   padding-block: 2rem;
 
