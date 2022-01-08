@@ -1,7 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
 const MyDocument: React.FC = () => (
-  <Html>
+  <Html lang="en">
     <Head>
       <meta
         name="description"

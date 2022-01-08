@@ -10,7 +10,6 @@ interface OctocatProps
 const Octocat = (props: OctocatProps): JSX.Element => {
   return (
     <svg
-      aria-hidden="true"
       focusable="false"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
