@@ -40,9 +40,9 @@ const Footer = (): JSX.Element => {
         <br />
         <Anchor
           href={config.githubRepoUrl}
-          className="last-updated-on inline-link"
+          className="view-on-github inline-link"
         >
-          Last updated on: {new Date().toDateString()}
+          View on Github
         </Anchor>
       </span>
     </footer>

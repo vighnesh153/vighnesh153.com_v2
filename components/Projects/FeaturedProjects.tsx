@@ -69,7 +69,7 @@ const FeaturedProjects = (): JSX.Element => {
                 >
                   <Image
                     src={imageUrl}
-                    alt=""
+                    alt={heading}
                     layout="fill"
                     placeholder="blur"
                   />
