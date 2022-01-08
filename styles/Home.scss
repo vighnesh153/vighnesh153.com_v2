@@ -34,6 +34,10 @@
       font-size: var(--t-1000);
       color: hsl(var(--major-text-color));
 
+      @media (width < 500px) {
+        white-space: normal;
+      }
+
       span.number {
         margin-right: 1rem;
         color: hsl(var(--color-secondary));
@@ -59,6 +63,9 @@
         }
         @media (max-width: 600px) {
           margin-left: 10px;
+        }
+        @media (width < 500px) {
+          display: none;
         }
       }
     }
