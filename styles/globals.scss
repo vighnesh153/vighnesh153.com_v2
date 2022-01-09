@@ -33,8 +33,6 @@ html {
 
 html,
 body {
-  font-family: 'Inconsolata', monospace;
-
   background-color: hsl(var(--color-primary));
 }
 
@@ -64,8 +62,6 @@ a {
 
   &:hover,
   &:focus-within {
-    font-weight: bold;
-
     @media (prefers-reduced-motion: no-preference) {
       background-position: 0 0, 100% 100%, 0 0, 100% 100%;
     }
@@ -80,7 +76,7 @@ a {
 
   background-color: hsla(var(--color-secondary));
   color: hsla(var(--color-primary));
-  font-weight: bold;
+  font-weight: 600;
   font-size: var(--t-600);
   border: 1px solid hsla(var(--color-secondary));
 

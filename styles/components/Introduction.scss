@@ -5,30 +5,30 @@
 
   .hi {
     color: hsl(var(--color-secondary));
+    font-size: var(--t-600);
   }
 
   .name {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 
     color: hsl(var(--major-text-color));
-    font-weight: bolder;
-    word-spacing: -10px;
+    font-size: var(--t-1300);
+    font-weight: 600;
   }
 
   .build-things {
-    margin-top: 1rem;
-
     color: hsla(var(--major-text-color), 70%);
-    font-weight: bolder;
-    word-spacing: -10px;
+    font-size: var(--t-1200);
+    font-weight: 600;
+    line-height: 1.1;
   }
 
   .description {
     margin-top: 1.5rem;
 
     color: hsla(var(--major-text-color), 60%);
+    font-size: var(--t-600);
     line-height: 1.5;
-    letter-spacing: -1px;
   }
 
   .contact {
@@ -36,6 +36,7 @@
     margin-top: 2rem;
 
     color: hsl(var(--color-secondary));
+    font-size: var(--t-600);
 
     &:hover,
     &:focus-within {

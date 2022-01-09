@@ -10,14 +10,11 @@ const Introduction = (): JSX.Element => {
   return (
     <section className="introduction">
       <h2 hidden>Introduction</h2>
-      <p className="hi t-600">Hi, my name is</p>
-      <p className="name t-1300">{config.myName}.</p>
-      <p className="build-things t-1300">{config.shortSummary}</p>
-      <p className="description t-600">{config.summary}</p>
-      <a
-        href="#contact"
-        className="contact awesome-link focus-dashed-outline t-600"
-      >
+      <p className="hi">Hi, my name is</p>
+      <p className="name">{config.myName}.</p>
+      <p className="build-things">{config.shortSummary}</p>
+      <p className="description">{config.summary}</p>
+      <a href="#contact" className="contact awesome-link focus-dashed-outline">
         Get In Touch
       </a>
     </section>
