@@ -8,10 +8,6 @@ const MyDocument: React.FC = () => (
         content="Vighnesh's personal space where he talks about himself. View his different profiles, skills and projects there or find a way to contact him."
       />
       <link rel="icon" href="/favicon.ico" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap"
-        rel="stylesheet"
-      />
     </Head>
     <body>
       <Main />

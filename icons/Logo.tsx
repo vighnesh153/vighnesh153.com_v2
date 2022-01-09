@@ -24,7 +24,7 @@ const Logo: React.FC<LogoProps> = (props) => {
         y="135"
         strokeWidth="2"
         fill="currentColor"
-        style={{ color: 'currentcolor', fontSize: '7em' }}
+        style={{ color: 'currentcolor', fontSize: '5.5em' }}
       >
         RV
       </text>
