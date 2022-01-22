@@ -19,9 +19,13 @@
   --color-primary-light-h: 218;
   --color-primary-light-s: 58%;
   --color-primary-light-l: 16%;
+  --color-primary-light-l-2: 25%;
   --color-primary-light: var(--color-primary-light-h),
     var(--color-primary-light-s), var(--color-primary-light-l);
+  --color-primary-light-2: var(--color-primary-light-h),
+    var(--color-primary-light-s), var(--color-primary-light-l-2);
   --color-primary-light-demo: hsl(218, 58%, 16%);
+  --color-primary-light-2-demo: hsl(218, 58%, 25%);
 
   // Primary dark
   --color-primary-dark-h: 218;
