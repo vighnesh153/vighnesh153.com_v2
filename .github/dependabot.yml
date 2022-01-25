@@ -9,6 +9,6 @@ updates:
     directory: '/' # Location of package manifests
     schedule:
       interval: 'daily'
-    reviewers:
-      - 'vighnesh153'
+    # reviewers:
+    #   - 'vighnesh153'
     target-branch: 'main'
