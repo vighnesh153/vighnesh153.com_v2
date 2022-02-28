@@ -5,7 +5,7 @@
 import React from 'react';
 
 import splImageUrl from 'static/spl.png';
-import useGlobalStateImageUrl from 'static/useGlobalState.png';
+import tsxPlaygroundImageUrl from 'static/tsxPlayground.png';
 import canvasIllustrationsImageUrl from 'static/canvas-illustrations.png';
 
 const featuredProjects = [
@@ -22,21 +22,23 @@ const featuredProjects = [
     },
   },
   {
-    id: 'use-global-state',
-    heading: 'React useGlobalState library',
-    imageUrl: useGlobalStateImageUrl,
+    id: 'tsx-playground',
+    heading: 'React & Typescript playground',
+    imageUrl: tsxPlaygroundImageUrl,
     description: (
       <>
-        A lightweight library that provides a React hook for having a piece of
-        global state. It is similar to the useState hook from the React library
-        but with the only addition that this hook{' '}
-        <strong className="highlight">persists</strong> the state.
+        An interactive, browser-based, coding environment which supports
+        importing any NPM module (which works on browsers) from the NPM
+        registry. You can use this to test out any React and/or Typescript
+        snippet directly in the browser without having to create a test project.
+        Run your code safely and securely in your browser, without having to
+        worry about anything, because your code never leaves your browser.
       </>
     ),
-    technologies: ['React', 'Typescript', 'NPM', 'Github Actions'],
+    technologies: ['React', 'Typescript', 'ESBuild', 'Vercel'],
     links: {
-      github: '//github.com/vighnesh153/react-use-global-state',
-      demo: '//www.npmjs.com/package/@vighnesh153/use-global-state',
+      github: '//github.com/vighnesh153/tsx-playground',
+      demo: '//tsx.vighnesh153.com',
     },
   },
   {
