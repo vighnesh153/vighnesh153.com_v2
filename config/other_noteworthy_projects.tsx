@@ -6,6 +6,22 @@ import React from 'react';
 
 const otherNoteworthyProjects = [
   {
+    id: 'draw.vighnesh153.com',
+    heading: 'A Drawing App',
+    description: (
+      <>
+        A simple drawing application hosted on the web. Features include,
+        free-hand drawing, closed-region filling, color-picking for brush &
+        fill, brush thickness picking, undo, redo and clear-screen.
+      </>
+    ),
+    technologies: ['React', 'Typescript', 'Canvas', 'Vercel'],
+    links: {
+      github: '//github.com/vighnesh153/draw.vighnesh153.com',
+      demo: '//draw.vighnesh153.com',
+    },
+  },
+  {
     id: 'use-global-state',
     heading: 'React useGlobalState library',
     description: (
