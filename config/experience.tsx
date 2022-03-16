@@ -7,6 +7,16 @@ import React from 'react';
 import Anchor from 'components/Anchor';
 import { companyUrls } from './base';
 
+const appstoreDeveloperConsole = (
+  <Anchor
+    href="//developer.amazon.com/apps-and-games"
+    openInNewTab
+    className="inline-link"
+  >
+    Appstore Developer Console
+  </Anchor>
+);
+
 const experience = [
   {
     company: 'Amazon',
@@ -16,20 +26,65 @@ const experience = [
     responsibilities: [
       <>
         Working on the revamp of App Submission flow on{' '}
+        {appstoreDeveloperConsole} where developers can submit their mobile or
+        web applications to be available on Amazon Appstore
+      </>,
+      <>
+        Worked on an internal tool which is a one stop solution for everything
+        related to the{' '}
         <Anchor
-          href="//developer.amazon.com"
+          href="//www.amazon.jobs/en/landing_pages/about-amazon"
           openInNewTab
           className="inline-link"
         >
-          developer.amazon.com
+          Day 1 culture
         </Anchor>{' '}
-        where developers can submit their mobile or web applications to be
-        available on Amazon Appstore
+        of Amazon. The tool is accessible to all the Amazon employees
       </>,
-      'Working on a internal tool which is a one stop for everything related to the Day 1 culture of Amazon. The tool is accessible to all the Amazon employees and is currently handling over 2000 tps',
-      'Write modern, performant, maintainable code for a diverse array of other Amazon internal projects',
-      'Work with a variety of different languages, platforms, frameworks, and content management systems such as Javascript, Typescript, React, NextJS, Java, Spring, AWS',
-      'Communicate with multi-disciplinary teams of engineers, designers, program managers, and stakeholders on a daily basis',
+      <>
+        Working on an internal React Components Library which will be used by
+        entire Appstore to build standard and accessible UI for all the web
+        pages on {appstoreDeveloperConsole}
+      </>,
+      <>
+        Worked on an internal tool which was used by Appstore certifiers, to
+        certify/flag all the apps that were submitted on{' '}
+        {appstoreDeveloperConsole} based on internal policies
+      </>,
+      'Writing modern, performant, maintainable code for a diverse array of other Amazon external and internal projects',
+      <>
+        Working with a variety of different languages, platforms, frameworks,
+        and content management systems such as{' '}
+        <Anchor
+          href="//developer.mozilla.org/en-US/docs/Web/JavaScript"
+          openInNewTab
+          className="inline-link"
+        >
+          Javascript
+        </Anchor>
+        ,{' '}
+        <Anchor
+          href="//www.typescriptlang.org/"
+          openInNewTab
+          className="inline-link"
+        >
+          Typescript
+        </Anchor>
+        ,{' '}
+        <Anchor href="//reactjs.org/" openInNewTab className="inline-link">
+          ReactJS
+        </Anchor>
+        ,{' '}
+        <Anchor href="//nextjs.org/" openInNewTab className="inline-link">
+          NextJS
+        </Anchor>
+        ,{' '}
+        <Anchor href="//aws.amazon.com" openInNewTab className="inline-link">
+          AWS
+        </Anchor>
+        , internal-AWS, Java, Spring, JSP
+      </>,
+      'Communicating with multi-disciplinary teams of engineers, designers, program managers, and stakeholders on a daily basis',
     ],
   },
   {
