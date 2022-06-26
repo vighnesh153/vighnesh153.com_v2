@@ -21,8 +21,12 @@ const experience = [
   {
     company: 'Amazon',
     companyUrl: companyUrls.Amazon,
-    position: 'Web Development Engineer',
-    duration: 'September 2020 - Present',
+    positions: [
+      {
+        title: 'Web Development Engineer',
+        duration: 'September 2020 - Present',
+      },
+    ],
     responsibilities: [
       <>
         Working on the revamp of App Submission flow on{' '}
@@ -90,8 +94,12 @@ const experience = [
   {
     company: 'Smarter Codes',
     companyUrl: companyUrls.SmarterCodes,
-    position: 'Full Stack Engineer',
-    duration: 'July 2020 - September 2020',
+    positions: [
+      {
+        title: 'Full Stack Engineer',
+        duration: 'July 2020 - September 2020',
+      },
+    ],
     responsibilities: [
       <>
         Implemented many of the{' '}
@@ -117,6 +125,12 @@ const experience = [
   {
     company: 'Tavisca',
     companyUrl: companyUrls.Tavisca,
+    positions: [
+      {
+        title: 'Software Engineer',
+        duration: 'June 2019 - January 2020',
+      },
+    ],
     position: 'Software Engineer',
     duration: 'June 2019 - January 2020',
     responsibilities: [

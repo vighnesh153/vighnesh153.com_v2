@@ -46,7 +46,7 @@ const Experience = (): JSX.Element => {
           className="individual-experiences-container"
         >
           {config.experience.map(
-            ({ company, companyUrl, position, duration, responsibilities }) => {
+            ({ company, companyUrl, positions, responsibilities }) => {
               const slug = slugifyCompanyName(company);
               return (
                 <section
@@ -59,7 +59,7 @@ const Experience = (): JSX.Element => {
                   })}
                 >
                   <h3 className="position">
-                    {position}{' '}
+                    {positions[0].title}{' '}
                     <Anchor
                       href={companyUrl}
                       openInNewTab
@@ -68,7 +68,7 @@ const Experience = (): JSX.Element => {
                       @ {company}
                     </Anchor>
                   </h3>
-                  <h4 className="duration">{duration}</h4>
+                  <h4 className="duration">{positions[0].duration}</h4>
                   <ul className="responsibilities">
                     {responsibilities.map((responsibility, index) => (
                       <li key={index} className="common-list-item">
