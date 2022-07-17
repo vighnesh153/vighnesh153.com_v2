@@ -3,6 +3,7 @@
  */
 
 export const companyUrls = {
+  Google: 'https://about.google',
   Amazon: 'https://amazon.com',
   SmarterCodes: 'https://smarter.codes',
   Tavisca: 'https://tavisca.com',
@@ -23,5 +24,5 @@ export const smallConstants = {
     name: 'Resume',
     url: 'https://bit.ly/vighnesh153-resume',
   },
-  skills: ['Javascript (ES6+)', 'Typescript', 'React', 'Nodejs'],
+  skills: ['Java', 'Kotlin', 'C++', 'Golang', 'Typescript', 'React', 'Nodejs'],
 };

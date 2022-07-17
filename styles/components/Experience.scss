@@ -1,33 +1,6 @@
 .experience {
   margin-top: 30vh;
   padding-top: 10vh;
-
-  .tabs-container {
-    @media (width >= 768px) {
-      display: flex;
-
-      nav.experience-navigation {
-        flex-shrink: 0;
-        max-width: unset;
-        flex-direction: column;
-
-        button {
-          text-align: left;
-          border-left: 2px solid hsla(var(--light-text-color), 20%);
-          border-bottom: 0;
-
-          &.active {
-            border-left-color: hsl(var(--color-secondary));
-          }
-        }
-      }
-
-      .experience-item-body {
-        flex-grow: 1;
-        padding: 0.5rem 2rem;
-      }
-    }
-  }
 }
 
 .individual-experiences-container {
@@ -62,43 +35,6 @@
 
     &.active {
       border-bottom-color: hsl(var(--color-secondary));
-    }
-  }
-}
-
-.experience .experience-item-body {
-  padding: 2rem 1rem;
-
-  &.hide {
-    display: none;
-  }
-
-  .position {
-    font-size: var(--t-700);
-    color: hsl(var(--major-text-color));
-
-    .company {
-      color: hsl(var(--color-secondary));
-    }
-  }
-
-  .duration {
-    padding-block: 0.5rem;
-
-    color: hsla(var(--major-text-color), 60%);
-  }
-
-  .responsibilities {
-    margin-top: 1rem;
-
-    font-size: var(--t-600);
-    color: hsla(var(--major-text-color), 60%);
-
-    line-height: 1.3;
-    list-style: none;
-
-    li {
-      margin-top: 0.5rem;
     }
   }
 }

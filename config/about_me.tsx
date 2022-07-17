@@ -16,8 +16,12 @@ const aboutMe = (
     <br />
     <br />
     Fast-forward to today, and I have had the privilege to work for{' '}
+    <Anchor href={companyUrls.Google} openInNewTab className="inline-link">
+      Google
+    </Anchor>
+    ,{' '}
     <Anchor href={companyUrls.Amazon} openInNewTab className="inline-link">
-      a huge corporation
+      Amazon
     </Anchor>
     ,{' '}
     <Anchor
@@ -34,12 +38,11 @@ const aboutMe = (
     .
     <br />
     <br />
-    My main focus these days is building is building accessible, inclusive
-    products and digital experiences at{' '}
-    <Anchor href={companyUrls.Amazon} openInNewTab className="inline-link">
-      Amazon
+    My Main focus these days is building the Android SDK for AndroidTV at{' '}
+    <Anchor href={companyUrls.Google} openInNewTab className="inline-link">
+      Google
     </Anchor>{' '}
-    for the Appstore org.
+    to aid the AndroidTV builders.
   </>
 );
 

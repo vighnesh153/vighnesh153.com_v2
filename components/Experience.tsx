@@ -2,7 +2,7 @@
  * @author Vighnesh Raut <me@vighnesh153.com>
  */
 
-import React, { useState } from 'react';
+import React from 'react';
 
 import Anchor from './Anchor';
 import config from 'config';
@@ -12,75 +12,107 @@ const slugifyCompanyName = (companyName: string) =>
   `experience-at-${companyName.toLowerCase().replace(/ /g, '-')}`;
 
 const Experience = (): JSX.Element => {
-  const [activeTab, setActiveTab] = useState(
-    slugifyCompanyName(config.experience[0].company)
-  );
-
   return (
     <section id="experience" className="home-section experience">
       <h2 className="heading">
         <span className="number">02.</span> Where I have worked
       </h2>
-      <section className="tabs-container">
-        <nav role="tablist" className="experience-navigation">
-          {config.experience.map(({ company }) => {
+      <section
+        className="experiences-list"
+        style={{ position: 'relative', height: 'max-content' }}
+      >
+        {config.experience.map(
+          ({
+            company,
+            companyUrl,
+            totalDuration,
+            positions,
+            responsibilities,
+          }) => {
             const slug = slugifyCompanyName(company);
-            const isActive = slug === activeTab;
             return (
-              <button
-                key={company}
-                role="tab"
-                aria-controls={slug}
-                aria-selected={isActive}
-                className={clsx({ active: isActive })}
-                onClick={() => setActiveTab(slug)}
+              <section
+                key={slug}
+                id={slug}
+                role="tabpanel"
+                style={{ padding: '2rem 1rem', marginBottom: 20 }}
               >
-                {company}
-              </button>
-            );
-          })}
-        </nav>
-        <section
-          aria-live="polite"
-          role="region"
-          className="individual-experiences-container"
-        >
-          {config.experience.map(
-            ({ company, companyUrl, positions, responsibilities }) => {
-              const slug = slugifyCompanyName(company);
-              return (
-                <section
-                  key={slug}
-                  id={slug}
-                  role="tabpanel"
-                  aria-hidden={slug !== activeTab}
-                  className={clsx('experience-item-body', {
-                    hide: slug !== activeTab,
-                  })}
+                <h3
+                  style={{
+                    fontSize: 'var(--t-700)',
+                    color: 'hsl(var(--major-text-color))',
+                  }}
                 >
-                  <h3 className="position">
-                    {positions[0].title}{' '}
-                    <Anchor
-                      href={companyUrl}
-                      openInNewTab
-                      className="company inline-link"
-                    >
-                      @ {company}
-                    </Anchor>
-                  </h3>
-                  <h4 className="duration">{positions[0].duration}</h4>
-                  <ul className="responsibilities">
-                    {responsibilities.map((responsibility, index) => (
-                      <li key={index} className="common-list-item">
-                        {responsibility}
-                      </li>
-                    ))}
-                  </ul>
+                  <Anchor
+                    href={companyUrl}
+                    openInNewTab
+                    className="inline-link"
+                    style={{ color: 'hsl(var(--color-secondary))' }}
+                  >
+                    Building @ {company}
+                  </Anchor>
+                </h3>
+                {positions.length > 1 && (
+                  <p
+                    style={{
+                      color: 'hsla(var(--major-text-color), 60%)',
+                    }}
+                  >
+                    Full time · {totalDuration}
+                  </p>
+                )}
+                <section
+                  style={{
+                    marginTop: 10,
+                    marginBottom: 30,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: 12,
+                  }}
+                >
+                  {positions.map(({ title, duration }) => (
+                    <section key={`${title}-${duration}`}>
+                      <p
+                        style={{
+                          fontSize: 'var(--t-700)',
+                          color: 'hsl(var(--major-text-color))',
+                        }}
+                      >
+                        {title}
+                      </p>
+                      <p
+                        style={{
+                          color: 'hsla(var(--major-text-color), 60%)',
+                        }}
+                      >
+                        {duration}
+                      </p>
+                    </section>
+                  ))}
                 </section>
-              );
-            }
-          )}
-        </section>
+                <ul
+                  style={{
+                    marginTop: '1rem',
+                    fontSize: 'var(--t-600)',
+                    color: 'hsla(var(--major-text-color), 60%)',
+                    lineHeight: 1.3,
+                    listStyle: 'none',
+                  }}
+                >
+                  {responsibilities.map((responsibility, index) => (
+                    <li
+                      key={index}
+                      className="common-list-item"
+                      style={{ marginTop: '0.5rem' }}
+                    >
+                      {responsibility}
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            );
+          }
+        )}
       </section>
     </section>
   );

@@ -17,14 +17,60 @@ const appstoreDeveloperConsole = (
   </Anchor>
 );
 
+const getTimeTillToday = (from: Date, toDate: Date = new Date()) => {
+  const totalMonths =
+    (toDate.getFullYear() - from.getFullYear()) * 12 +
+    (toDate.getMonth() - from.getMonth() + 1);
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
+  return [
+    years > 0 ? `${years} yr` : '',
+    months > 0 ? `${months} mos` : '',
+  ].join(' ');
+};
+
 const experience = [
+  {
+    company: 'Google',
+    companyUrl: companyUrls.Google,
+    totalDuration: <>{getTimeTillToday(new Date('2022-07-14'))}</>,
+    positions: [
+      {
+        title: 'Software Engineer 2',
+        duration: (
+          <>July 2022 - Present · {getTimeTillToday(new Date('2022-07-14'))}</>
+        ),
+      },
+    ],
+    responsibilities: [
+      <>Building the Android SDK to aid app developers of AndroidTV</>,
+      <>Recommendation engine for videos on AndroidTV</>,
+    ],
+  },
   {
     company: 'Amazon',
     companyUrl: companyUrls.Amazon,
+    totalDuration: (
+      <>{getTimeTillToday(new Date('2020-09-28'), new Date('2022-07-14'))}</>
+    ),
     positions: [
       {
-        title: 'Web Development Engineer',
-        duration: 'September 2020 - Present',
+        title: 'Front End Engineer 1',
+        duration: (
+          <>
+            June 2022 - July 2022 ·{' '}
+            {getTimeTillToday(new Date('2022-06-01'), new Date('2022-07-14'))}
+          </>
+        ),
+      },
+      {
+        title: 'Web Development Engineer 1',
+        duration: (
+          <>
+            September 2020 - May 2022 ·{' '}
+            {getTimeTillToday(new Date('2020-09-28'), new Date('2022-05-31'))}
+          </>
+        ),
       },
     ],
     responsibilities: [
@@ -94,10 +140,18 @@ const experience = [
   {
     company: 'Smarter Codes',
     companyUrl: companyUrls.SmarterCodes,
+    totalDuration: (
+      <>{getTimeTillToday(new Date('2020-07-06'), new Date('2020-09-25'))}</>
+    ),
     positions: [
       {
         title: 'Full Stack Engineer',
-        duration: 'July 2020 - September 2020',
+        duration: (
+          <>
+            July 2020 - September 2020 ·{' '}
+            {getTimeTillToday(new Date('2020-07-06'), new Date('2020-09-25'))}
+          </>
+        ),
       },
     ],
     responsibilities: [
@@ -125,14 +179,20 @@ const experience = [
   {
     company: 'Tavisca',
     companyUrl: companyUrls.Tavisca,
+    totalDuration: (
+      <>{getTimeTillToday(new Date('2019-07-15'), new Date('2020-01-25'))}</>
+    ),
     positions: [
       {
         title: 'Software Engineer',
-        duration: 'June 2019 - January 2020',
+        duration: (
+          <>
+            July 2019 - January 2020 ·{' '}
+            {getTimeTillToday(new Date('2019-07-15'), new Date('2020-01-25'))}
+          </>
+        ),
       },
     ],
-    position: 'Software Engineer',
-    duration: 'June 2019 - January 2020',
     responsibilities: [
       'Under went Software Engineering training for 6 months and learnt a lot about Software engineering design principles, clean code best practices, etc.',
       'Built a Road-trip Itinerary Planner (proof-of-concept) project where I applied all the things I learnt during my training phase',
