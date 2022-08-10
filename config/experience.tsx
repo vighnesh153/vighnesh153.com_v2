@@ -44,7 +44,7 @@ const experience = [
     ],
     responsibilities: [
       <>Building the DevTools to help AndroidTV App developers to develop their apps</>,
-      <>Google App Verification System for validating common integration between GoogleTV and developer's apps</>,
+      <>Google App Verification System for validating common integration flows between GoogleTV and developer's apps</>,
     ],
   },
   {
