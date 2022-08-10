@@ -43,8 +43,8 @@ const experience = [
       },
     ],
     responsibilities: [
-      <>Building the Android SDK to aid app developers of AndroidTV</>,
-      <>Recommendation engine for videos on AndroidTV</>,
+      <>Building the DevTools to help AndroidTV App developers to develop their apps</>,
+      <>Google App Verification System for validating common integration between GoogleTV and developer's apps</>,
     ],
   },
   {
