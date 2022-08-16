@@ -46,7 +46,7 @@ const otherNoteworthyProjects = [
     technologies: ['React', 'Typescript', 'Vercel', 'NextJS'],
     links: {
       github: '',
-      demo: '//blogs.vighnesh153.com',
+      demo: '//blog.vighnesh153.com',
     },
   },
   {
