@@ -49,7 +49,7 @@ const Experience = (): JSX.Element => {
                     className="inline-link"
                     style={{ color: 'hsl(var(--color-secondary))' }}
                   >
-                    Building @ {company}
+                    @{company}
                   </Anchor>
                 </h3>
                 {positions.length > 1 && (
