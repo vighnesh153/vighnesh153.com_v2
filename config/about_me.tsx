@@ -38,11 +38,10 @@ const aboutMe = (
     .
     <br />
     <br />
-    My Main focus these days is building developer tools for AndroidTV at{" "}
+    My Main focus these days is building developer tools for GoogleTV developers at{" "}
     <Anchor href={companyUrls.Google} openInNewTab className="inline-link">
       Google
-    </Anchor>{" "}
-    to aid the AndroidTV app developers.
+    </Anchor>.
   </>
 );
 
