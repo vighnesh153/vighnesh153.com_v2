@@ -38,7 +38,7 @@ const aboutMe = (
     .
     <br />
     <br />
-    My Main focus these days is building next-gen developer tools for GoogleTV developers at{" "}
+    My Main focus these days is building next-gen developer tools for GoogleTV at{" "}
     <Anchor href={companyUrls.Google} openInNewTab className="inline-link">
       Google
     </Anchor>.

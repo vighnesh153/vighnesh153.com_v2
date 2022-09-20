@@ -43,7 +43,7 @@ const experience = [
       },
     ],
     responsibilities: [
-      <>Building next-gen developer tools for GoogleTV developers</>,
+      <>Building next-gen developer tools for GoogleTV</>,
       <>Google App Verification System for validating common integration flows between GoogleTV and developer's apps</>,
     ],
   },
